@@ -52,25 +52,24 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       
     tr:nth-child(even) {background-color: #E8080;}
-      
   </style>
   <script>
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
 
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("myBtn").style.display = "block";
-    } else {
-      document.getElementById("myBtn").style.display = "none";
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
     }
-  }
 
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
   </script>
 <body>
 
@@ -96,29 +95,26 @@
 <br>
   
 <!-- Page content -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="w3-container">
   <h2 style="color:#B40000;">&nbsp;<b>Resources</b></h2>
-  
-<div>
-<img src="hangul chart_1.jpg" class="w3-border w3-padding" alt="Hangul Basics"></tr>
-<b><h4>Hangul Basics</h4></b></tr>
-</div> 
-<br>
-<div>
-<img src="hangul chart_2.jpg" class="w3-border w3-padding" alt="Hangul Intermediate"></tr>
-<b><h4>Hangul Intermediate</h4></b></tr>
-</div>
-<br>
-<div>
-<img src="hangul chart_3.jpg" class="w3-border w3-padding" alt="Hangul Advance"></tr>
-<b><h4>Hangul Advance</h4></b></tr>
-</div>
-
-<div>
-  <i class="fas fa-chevron-circle-up fa-3x" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+  <div>
+    <img src="hangul chart_1.jpg" class="w3-border w3-padding" alt="Hangul Basics"></tr>
+    <b><h4>Hangul Basics</h4></b></tr>
+  </div> 
+  <br>
+  <div>
+    <img src="hangul chart_2.jpg" class="w3-border w3-padding" alt="Hangul Intermediate"></tr>
+    <b><h4>Hangul Intermediate</h4></b></tr>
+  </div>
+  <br>
+  <div>
+    <img src="hangul chart_3.jpg" class="w3-border w3-padding" alt="Hangul Advance"></tr>
+    <b><h4>Hangul Advance</h4></b></tr>
+  </div>
+  <div>
+    <i class="fas fa-chevron-circle-up fa-3x" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+  </div>
 </div>    
 </body>
 <!-- End page content -->
@@ -132,9 +128,9 @@
 </div>  
 <!-- Footer -->
 <div>    
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p>Coronado Korean Club</p>
+  <footer class="w3-center w3-light-grey w3-padding-32">
+    <p>Coronado Korean Club</p>
   </footer>
-    </div>
+</div>
 </body>
 </html>
