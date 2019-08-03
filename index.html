@@ -18,23 +18,23 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 5px;
 }
 </style>
-<body>
 
+<body>
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-container">
-    <div class="w3-bar w3-white w3-padding w3-card w3-wide" style="letter-spacing:4px;">
-    <a href="http://liliumorca.github.io" class="w3-bar-item w3-button">CHS Korean Club</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-      <div class="w3-right w3-hide-small">
-      <a href="https://liliumorca.github.io/" class="w3-bar-item w3-button"><i class="fas fa-home"></i>Home</a>
-      <a href="http://liliumorca.github.io/about.html" class="w3-bar-item w3-button"><i class="far fa-question-circle"></i>About Us</a>
-      <a href="https://liliumorca.github.io/activities.html" class="w3-bar-item w3-button"><i class="fas fa-image"></i></i>Activities</a>
-      <a href="https://liliumorca.github.io/contacts.html" class="w3-bar-item w3-button"><i class="fas fa-address-book"></i>Contacts</a>
-      <a href="https://liliumorca.github.io/resources.html" class="w3-bar-item w3-button"><i class="fas fa-folder"></i>Resources</a>
-      </div>
-    </div>
-  </div>
+<div class="w3-bar w3-white w3-padding w3-card w3-wide">
+  <a href="http://liliumorca.github.io" class="w3-bar-item w3-button w3-left">CHS Korean Club</a>
+  <a href="https://liliumorca.github.io/" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fas fa-home"></i>Home</a>
+  <a href="http://liliumorca.github.io/about.html" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="far fa-question-circle"></i>About Us</a>
+  <a href="https://liliumorca.github.io/activities.html" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fas fa-image"></i></i>Activities</a>
+  <a href="https://liliumorca.github.io/contacts.html" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fas fa-address-book"></i>Contacts</a>
+  <a href="https://liliumorca.github.io/resources.html" class="w3-bar-item w3-button w3-right w3-hide-small"><i class="fas fa-folder"></i>Resources</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+</div>
+<div id="demo" class="w3-bar-block w3-card w3-hide w3-hide-large w3-hide-medium">
+  <a href="http://liliumorca.github.io/about.html" class="w3-bar-item w3-button"><i class="far fa-question-circle"></i>About Us</a>
+  <a href="https://liliumorca.github.io/activities.html" class="w3-bar-item w3-button"><i class="fas fa-image"></i></i>Activities</a>
+  <a href="https://liliumorca.github.io/contacts.html" class="w3-bar-item w3-button"><i class="fas fa-address-book"></i>Contacts</a>
+  <a href="https://liliumorca.github.io/resources.html" class="w3-bar-item w3-button"><i class="fas fa-folder"></i>Resources</a>
 </div>
 <br>
 <br>
@@ -114,5 +114,16 @@ h1, h2, h3, h4, h5, h6 {
   <p>Coronado Korean Club</p>
 </footer>
 
+<!-- Script to control the responsive navigation bar -->
+<script>
+  function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+</script>
 </body>
 </html>
