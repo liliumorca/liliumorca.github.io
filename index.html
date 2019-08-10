@@ -13,33 +13,30 @@
   }
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: 5px;
+  } 
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
   }
-    
-      #myBtn {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      right: 30px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: #000000;
-      color: white;
-      cursor: pointer;
-      padding: 15px;
-      border-radius: 4px;
-    }
-    #myBtn:hover {
-      background-color: #555;
-    }
-    .button:active {
-      background-color: #8F0000;
-      box-shadow: 0 5px #666;
-      transform: translateY(4px);
-    }  
-    
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  .button:active {
+    background-color: #8F0000;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
   </style>
   
  <script>
@@ -61,6 +58,7 @@
   
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!-- Navigation Bar -->
 <div class="w3-bar w3-card w3-top w3-white w3-wide">
   <a href="http://liliumorca.github.io" class="w3-bar-item w3-button w3-left" style="color:black;">CHS <span style="color:#B40000;">K</span>orean <span style="color:#144988;">C</span>lub</a>
